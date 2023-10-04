@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38b4f5cdc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- -------------------------Home------------------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#workmain">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <!-- <p>Student</p> -->
+            <h1>Hi, I'm <span>Yash</span><br>Patil From India</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------About------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About Me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="sub-info">I'm pursuing mechanical engineering from the R. C. Patel Institute of Technology, Shirpur, with a passion for technology and a strong desire to transition into the IT sector. My goal is to become a skilled full-stack developer. I'm excited to learn, adapt, and leverage my engineering background to create innovative solutions in the world of web development and as an active volunteer member of the NSS (National Service Scheme).</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Pursuing Mechanical Engineering at the R. C. Patel Institute of Technology, Shirpur</li>
+                        <li><span>HSC Science - 2021</span><br>R. C. Patel Jr. College, Shirpur</li>
+                        <li><span>SSC - 2019</span><br>R. C. Patel Seconday School, Shirpur</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sep 2023 - Oct 2023<br>Intern</span><br>Codsoft - Internship in Web development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------Skills------------------------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="skills-list">
+           <div>
+            <i class="fa-brands fa-python"></i>
+            <h2 >Python</h2>
+            <p class="skills-justify">Proficient in Python, adept at crafting efficient code for diverse applications, with a strong problem-solving mindset and a passion for programming.</p>
+            <a href="#">Read More</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>C Programming</h2>
+            <p class="skills-justify">Proficient in C programming, showcasing expertise through hands-on projects and problem-solving abilities, continually expanding knowledge in this domain.</p>
+            <a href="#">Read More</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>HTML CSS</h2>
+            <p class="skills-justify">Proficient in crafting visually appealing websites with HTML and CSS, combining creativity and technical expertise to enhance user experiences.</p>
+            <a href="#">Read More</a>
+           </div> 
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------Work------------------------- -->
+<div id="workmain">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/calculator.png">
+                <div class="layer">
+                    <h3>Calculator Using Python</h3>
+                    <p>Created a versatile Python calculator app for 14 essential calculations, showcasing problem-solving skills and coding proficiency to simplify everyday tasks.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/landing page.png">
+                <div class="layer">
+                    <h3>landing Page Using HMTL & CSS</h3>
+                    <p>Successfully designed a captivating car rental landing page using HTML and CSS, showcasing sleek aesthetics and user-friendly functionality.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ticket-booking.png">
+                <div class="layer">
+                    <h3>Ticket Booking System</h3>
+                    <p>Created a versatile Python-based Mini Ticket Booking System, enabling seamless reservations for trains, flights, and buses, enhancing travel convenience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- -------------------------Contact------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>  +91 1234560000</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/yashpatil29_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yashpatil03/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/yash-patil-03"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#header" class="btn btn2">Download Resume  <i class="fa-solid fa-circle-down"></i></a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" maxlength="10" minlength="10" placeholder="Your Mobile Number" required>
+                    <textarea rows="3" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------Copyright------------------------- -->
+    <div class="copyright">
+        <p>Copyright © 2023 by Yash Patil | All Rights Reserves</p>
+    </div>
+</div>
+
+<!-- -------------------------Javascript------------------------- -->
+<script>
+  var tablinks = document.getElementsByClassName("tab-links") ;
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add
+    ("active-tab")
+  }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
